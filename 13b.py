@@ -22,32 +22,3 @@ for i,bus in sched:
     increment *= bus
 
 print(time_stamp)
-
-
-# satisfied = 0
-# target = len(sched)
-# base_list = [sched[0][1]+sched[x][0] for x in range(len(sched))]
-# print(base_list)
-# increment = sched[0][1]
-# increment = 17
-# tracker = [0 for i in base_list]
-# print(tracker)
-# curr = sum(tracker)
-# while not satisfied:
-#     counter = 0
-#     for j in range(len(base_list)):
-#         if base_list[j] % sched[j][1] == 0:
-#             counter += 1
-#             if not tracker[j]:
-#                 tracker[j] = 1
-#         else:
-#             break
-#     print(j,counter,base_list[j],tracker)
-#     if counter == target:
-#         satisfied = 1
-#     if sum(tracker) > curr:
-#         increment = lcm(sched[0][0], sched[1][0])
-#         curr = sum(tracker)
-#     else:
-#         base_list = [x+increment for x in base_list]
-# print(base_list)
